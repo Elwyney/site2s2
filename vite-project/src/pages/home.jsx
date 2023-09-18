@@ -16,22 +16,22 @@ const Home = () => {
     const [gender, setGender] = useState({ man: null, woman: null })
     return (
         <>
-            <main class="main-content">
-                <div class="container">
+            <main className="main-content">
+                <div className="container">
                     <div className="intro-section-container">
-                        <div class="intro-section">
+                        <div className="intro-section">
                             <h1>В нашем мире анонимных знакомств каждое лицо - загадка, каждый человек - история.</h1>
                             <span>Помните, ответственность за вашу безопасность лежит на вас. Не передавайте личные данные и будьте осторожны.</span>
                         </div>
-                        <img class="main-image" src={img} alt="" />
+                        <img className="main-image" src={img} alt="" />
                     </div>
-                    <form class="search-form" action="">
-                        <div class="form-section">
+                    <form className="search-form" action="">
+                        <div className="form-section">
                             {
                                 genderOptions.map(item => <GenderOptions title={item} genderFunc={setGender} />)
                             }
                         </div>
-                        <input class="search-button" type="button" value="Поиск" />
+                        <input className="search-button" type="button" value="Поиск" />
                     </form>
                 </div>
             </main>

@@ -6,9 +6,9 @@ const GenderOptions = ({ title, genderFunc }) => {
     console.log({ title: title.title, gender });
     return (
         <>
-            <div class="gender">
-                <span class="gender-label">{title.title}</span>
-                <div class="gender-options">
+            <div className="gender">
+                <span className="gender-label">{title.title}</span>
+                <div className="gender-options">
                     <input onClick={(event) => setGender(event.target.value)} type="button" value='М' />
                     <input onClick={(event) => setGender(event.target.value)} type="button" value='Ж' />
                 </div>
