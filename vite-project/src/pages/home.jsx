@@ -1,22 +1,29 @@
 import { useState } from 'react';
 import img from '../../src/assets/image/pngwing 1.png';
 import GenderOptions from '../components/home/gender';
-
+import Loader from '../components/home/loader';
 const Home = () => {
-    const genderOptions = [
+    const [genderOptions, setGenderOptions] = useState([
         {
             id: 1,
             title: 'Ваш пол',
+            gender: null,
         },
         {
             id: 2,
             title: 'Пол собеседника',
+            gender: null,
         },
-    ]
-    const [gender, setGender] = useState({ man: null, woman: null })
+    ])
+
+    const hangleClick = (id, gender) => {
+        setGenderOptions(genderOptions.map((option) =>
+            option.id === id ? { ...option, gender: gender } : { ...option }))
+    }
+    console.log(genderOptions);
     return (
         <>
-            <main className="main-content">
+            <main className="main-content m">
                 <div className="container">
                     <div className="intro-section-container">
                         <div className="intro-section">
@@ -28,7 +35,7 @@ const Home = () => {
                     <form className="search-form" action="">
                         <div className="form-section">
                             {
-                                genderOptions.map(item => <GenderOptions title={item} genderFunc={setGender} />)
+                                genderOptions.map(item => <GenderOptions id={item.id} title={item} genderFunc={hangleClick} />)
                             }
                         </div>
                         <input className="search-button" type="button" value="Поиск" />

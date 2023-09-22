@@ -35,6 +35,29 @@ body {
     margin: 0 auto;
 }
 
+.loader {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    span {
+        margin-bottom: 50px;
+    }
+
+    a {
+        background-color: #1e1e1e;
+        color: #CFCFCF;
+        padding: 15px 20px;
+        border-radius: 11px;
+        font-size: 16px;
+    }
+
+    &>* {
+        color: white;
+    }
+}
+
 
 // Header
 header {
@@ -131,17 +154,21 @@ header {
     margin-top: 50px;
     font-weight: 700;
 }
+
 .border {
-    border: 1px solid blue !important;
+    border: 1px solid #276AEB !important;
+    transition: .3s ease;
 }
 
 .navigation a.active {
-    font-weight: bold; /* Пример стилизации для подсветки активной ссылки */
+    font-weight: bold;
+    /* Пример стилизации для подсветки активной ссылки */
     color: #CFCFCF;
 }
 
 .heading {
     padding-top: 108px;
+
     & h1 {
         max-width: 1014px;
         font-size: 18px;
