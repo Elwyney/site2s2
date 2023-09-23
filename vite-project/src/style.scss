@@ -19,7 +19,9 @@ $font-heading: 32px;
     padding: 0;
     box-sizing: border-box;
 }
-
+#root {
+    padding-bottom: 150px;
+}
 a {
     text-decoration: none;
     color: $gray-light;
@@ -95,6 +97,9 @@ header {
 .intro-section-container {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #2d2d2d;
+    margin-bottom: 50px;
+    padding: 70px 0;
 
     .main-image {
         filter: drop-shadow(2px 4px 36px #ffffff2b);
