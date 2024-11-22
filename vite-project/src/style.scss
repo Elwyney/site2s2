@@ -19,9 +19,7 @@ $font-heading: 32px;
     padding: 0;
     box-sizing: border-box;
 }
-#root {
-    padding-bottom: 150px;
-}
+
 a {
     text-decoration: none;
     color: $gray-light;
@@ -97,9 +95,6 @@ header {
 .intro-section-container {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #2d2d2d;
-    margin-bottom: 50px;
-    padding: 70px 0;
 
     .main-image {
         filter: drop-shadow(2px 4px 36px #ffffff2b);
@@ -181,4 +176,67 @@ header {
         font-family: Inter, monospace;
         font-weight: 400;
     }
+}
+
+// chat
+.chat {
+    width: 800px;
+    margin: 0 auto;
+    padding-bottom: 180px;
+
+    .message {
+        margin-top: 30px;
+
+        &>span:nth-child(1) {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 700;
+            color: #ffe5a3;
+        }
+    }
+}
+
+form {
+    width: 562px;
+    display: flex;
+    gap: 15px;
+    position: fixed;
+    transform: translate(-50%, -100%);
+    top: 100%;
+    left: 50%;
+    justify-content: center;
+    background: linear-gradient(0deg, #0c0c0c, #0c0c0ceb, #00000000);
+    width: 100%;
+    height: 200px;
+    padding-top: 70px;
+}
+
+.chat-container {
+    color: $gray-light;
+}
+
+.text-input {
+    border-radius: 11px;
+    border: 1px solid #2d2d2d;
+    background-color: #111111;
+    padding: 12px 25px;
+    color: white;
+    outline: none;
+    width: 200px;
+    transition: 1s ease;
+    height: 40px;
+}
+
+.size {
+    width: 30%;
+}
+
+.submit-button {
+    padding: 12px 25px;
+    background-color: #1e1e1e;
+    height: 40px;
+    color: white;
+    outline: none;
+    border: 1px solid #242424;
+    border-radius: 11px;
 }

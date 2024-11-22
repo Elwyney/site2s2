@@ -4,6 +4,8 @@ import './style.scss';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Contacts from "./pages/Contacts.jsx";
 import Loader from './components/home/loader';
+import Chat from './pages/Chat';
+
 
 
 function App() {
