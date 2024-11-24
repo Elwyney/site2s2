@@ -16,8 +16,13 @@ function App() {
                 <Header />
                 <Routes>
                     <Route path="/" element={true ? <Home /> : <Loader />} />
+<<<<<<< HEAD
                     <Route path="/contacts" element={<Contacts />}/>
                     <Route path="/faq" element={<Faq />}/>
+=======
+                    <Route path="/contacts" element={<Contacts />} />
+                    <Route path="/faq" element={<Faq />} />
+>>>>>>> 3523a8841ce5b11c254d4d0ef6223dcd1bd2f43e
                 </Routes>
             </BrowserRouter>
         </>
