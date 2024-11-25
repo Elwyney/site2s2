@@ -248,39 +248,36 @@ form {
 }
 
 
-.faq_block {
-    width: 100%;
+.faq_block_first {
+    position: relative;
+    max-width: 1024px;
+    height: 64px;
     border: 1px solid $slate-gray;
     margin-bottom: 36px;
     padding: 21px 45px;
     border-radius: 11px;
 
-    div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
     & span {
+        position: absolute;
         font-size: 18px;
         color: #CFCFCF;
     }
 
     & .icon_1 {
-        width: 24px;
-        height: 24px;
+        position: absolute;
+        margin-left: 918px;
     }
 }
 
 .faq_block_second {
-    max-width: 1014px;
+    max-width: 1024px;
     height: 132px;
     margin-top: 36px;
     border: 1px solid $slate-gray; 
     position: relative;
     transform: scaleX(1);
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    & h2 {
+    & span {
         padding-left: 30px;
         padding-top: 21px;
         font-size: 22px;
@@ -297,12 +294,13 @@ form {
 }
 
 .faq_block_second_inactive {
-    max-width: 1014px;
+    max-width: 1024px;
     height: 70px;
     margin-top: 36px;
     border: 1px solid $slate-gray; 
     position: relative;
-    & h2 {
+    border-radius: 11px;
+    & span {
         padding-left: 30px;
         padding-top: 21px;
         font-size: 22px;

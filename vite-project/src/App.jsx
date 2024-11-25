@@ -13,11 +13,9 @@ function App() {
             <BrowserRouter>
                 <Header />
                 <Routes>
-
                     <Route path="/" element={true ? <Chat /> : <Loader />} />
                     <Route path="/contacts" element={<Contacts />} />
                     <Route path="/faq" element={<Faq />} />
-
                 </Routes>
             </BrowserRouter>
         </>
