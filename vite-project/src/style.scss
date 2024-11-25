@@ -245,57 +245,29 @@ form {
 
 .faq {
     margin-top: 270px;
-
 }
 
 
-.faq_block_first {
-    position: relative;
-    width: 1014px;
-    height: 64px;
+.faq_block {
+    width: 100%;
     border: 1px solid $slate-gray;
-    position: relative; 
-    & h1 {
-        padding-left: 30px;
-        padding-top: 21px;
-        font-size: 22px;
-        color: #CFCFCF;
-        position: absolute;
+    margin-bottom: 36px;
+    padding: 21px 45px;
+    border-radius: 11px;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
+
+    & span {
+        font-size: 18px;
+        color: #CFCFCF;
+    }
+
     & .icon_1 {
-        position: absolute; 
-        padding-left: 956px;
-        padding-top: 20px;
-        position: absolute;
+        width: 24px;
+        height: 24px;
     }
 }
-
-.faq_block_second {
-    width: 1014px;
-    height: 132px;
-    margin-top: 36px;
-    border: 1px solid $slate-gray; 
-    position: relative;
-    & h2 {
-        padding-left: 30px;
-        padding-top: 21px;
-        font-size: 22px;
-        color: #CFCFCF;
-        position: absolute; 
-        font-weight: 400;
-    }
-    & p {
-        position: absolute;
-        color: $slate-gray;;
-        font-weight: 400;
-        padding-left: 30px;
-        padding-top: 64px;
-        font-size: 20px;
-    }
-    & img {
-        position: absolute; 
-        padding-left: 956px;
-        padding-top: 20px;
-    }
-}
-
