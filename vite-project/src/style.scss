@@ -245,28 +245,30 @@ form {
 
 .faq {
     margin-top: 270px;
-
 }
 
 
-.faq_block_first {
-    position: relative;
-    width: 1014px;
-    height: 64px;
+.faq_block {
+    width: 100%;
     border: 1px solid $slate-gray;
-    position: relative; 
-    & h1 {
-        padding-left: 30px;
-        padding-top: 21px;
-        font-size: 22px;
-        color: #CFCFCF;
-        position: absolute;
+    margin-bottom: 36px;
+    padding: 21px 45px;
+    border-radius: 11px;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
+
+    & span {
+        font-size: 18px;
+        color: #CFCFCF;
+    }
+
     & .icon_1 {
-        position: absolute; 
-        padding-left: 956px;
-        padding-top: 20px;
-        position: absolute;
+        width: 24px;
+        height: 24px;
     }
 }
 
@@ -316,15 +318,5 @@ form {
     }
 }
 
-@media screen and (max-width: 1200px) {
-    .faq_block_second {
-        height: 200px;
-        & p {
-            padding-top: 90px;
-        }
-        & img {
-            padding-left: 656px;
-            padding-top: 40px;
-        }
-     }
-   }
+
+

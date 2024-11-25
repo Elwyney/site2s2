@@ -1,12 +1,11 @@
 import Header from './components/header';
-import Home from './pages/Home';
+
 import './style.scss';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Contacts from "./pages/Contacts.jsx";
 import Loader from './components/home/loader';
 import Faq from './pages/faq.jsx';
-
-
+import Chat from './pages/chat.jsx';
 
 function App() {
     return (
@@ -14,9 +13,11 @@ function App() {
             <BrowserRouter>
                 <Header />
                 <Routes>
-                    <Route path="/" element={true ? <Home /> : <Loader />} />
-                    <Route path="/contacts" element={<Contacts />}/>
-                    <Route path="/faq" element={<Faq />}/>
+
+                    <Route path="/" element={true ? <Chat /> : <Loader />} />
+                    <Route path="/contacts" element={<Contacts />} />
+                    <Route path="/faq" element={<Faq />} />
+
                 </Routes>
             </BrowserRouter>
         </>
