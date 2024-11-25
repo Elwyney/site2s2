@@ -270,24 +270,27 @@ form {
 }
 
 .faq_block_second {
+    display: flex;
+    flex-direction: column;
     max-width: 1024px;
-    height: 132px;
+    max-height: 100%;
     margin-top: 36px;
     border: 1px solid $slate-gray; 
-    position: relative;
     transform: scaleX(1);
+    position: relative;
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
     & span {
         padding-left: 30px;
         padding-top: 21px;
         font-size: 22px;
         color: #CFCFCF;
-        position: absolute; 
+        position: relative; 
         font-weight: 400;
         cursor: pointer;
+        margin-bottom: 10px;
     }
     & img {
-        position: absolute; 
+        position: absolute;
         padding-left: 956px;
         padding-top: 20px;
     }

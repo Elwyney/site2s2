@@ -10,11 +10,12 @@ $slate-gray: #242424;
 }
 
 .accordion-active {
-    position: absolute;
+    position: relative;
     color: $slate-gray;
     font-weight: 400;
     padding-left: 30px;
-    padding-top: 64px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 20px;
     transform: scaleY(1);
     opacity: 1;
