@@ -271,8 +271,32 @@ form {
 }
 
 .faq_block_second {
-    width: 1014px;
+    max-width: 1014px;
     height: 132px;
+    margin-top: 36px;
+    border: 1px solid $slate-gray; 
+    position: relative;
+    transform: scaleX(1);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    & h2 {
+        padding-left: 30px;
+        padding-top: 21px;
+        font-size: 22px;
+        color: #CFCFCF;
+        position: absolute; 
+        font-weight: 400;
+        cursor: pointer;
+    }
+    & img {
+        position: absolute; 
+        padding-left: 956px;
+        padding-top: 20px;
+    }
+}
+
+.faq_block_second_inactive {
+    max-width: 1014px;
+    height: 70px;
     margin-top: 36px;
     border: 1px solid $slate-gray; 
     position: relative;
@@ -283,14 +307,7 @@ form {
         color: #CFCFCF;
         position: absolute; 
         font-weight: 400;
-    }
-    & p {
-        position: absolute;
-        color: $slate-gray;;
-        font-weight: 400;
-        padding-left: 30px;
-        padding-top: 64px;
-        font-size: 20px;
+        cursor: pointer;
     }
     & img {
         position: absolute; 
@@ -299,3 +316,15 @@ form {
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .faq_block_second {
+        height: 200px;
+        & p {
+            padding-top: 90px;
+        }
+        & img {
+            padding-left: 656px;
+            padding-top: 40px;
+        }
+     }
+   }
