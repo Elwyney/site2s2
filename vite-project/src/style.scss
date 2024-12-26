@@ -243,81 +243,8 @@ form {
 
 //faq 
 
-.faq {
-    margin-top: 270px;
-}
 
 
-.faq_block_first {
-    position: relative;
-    max-width: 1024px;
-    height: 64px;
-    border: 1px solid $slate-gray;
-    margin-bottom: 36px;
-    padding: 21px 45px;
-    border-radius: 11px;
-
-    & span {
-        position: absolute;
-        font-size: 18px;
-        color: #CFCFCF;
-    }
-
-    & .icon_1 {
-        position: absolute;
-        margin-left: 918px;
-    }
-}
-
-.faq_block_second {
-    display: flex;
-    flex-direction: column;
-    max-width: 1024px;
-    max-height: 100%;
-    margin-top: 36px;
-    border: 1px solid $slate-gray; 
-    transform: scaleX(1);
-    position: relative;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    & span {
-        padding-left: 30px;
-        padding-top: 21px;
-        font-size: 22px;
-        color: #CFCFCF;
-        position: relative; 
-        font-weight: 400;
-        cursor: pointer;
-        margin-bottom: 10px;
-    }
-    & img {
-        position: absolute;
-        padding-left: 956px;
-        padding-top: 20px;
-    }
-}
-
-.faq_block_second_inactive {
-    max-width: 1024px;
-    height: 70px;
-    margin-top: 36px;
-    border: 1px solid $slate-gray; 
-    position: relative;
-    border-radius: 11px;
-    & span {
-        padding-left: 30px;
-        padding-top: 21px;
-        font-size: 22px;
-        color: #CFCFCF;
-        position: absolute; 
-        font-weight: 400;
-        cursor: pointer;
-    }
-    & img {
-        position: absolute; 
-        padding-left: 956px;
-        padding-top: 20px;
-    }
-}
 
 
 
