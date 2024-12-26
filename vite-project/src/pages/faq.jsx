@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import icon_1 from './icon_1.png';
 import icon_2 from './icon_2.png'
 
@@ -22,13 +21,4 @@ const Faq = () => {
     )
 }
 
-=======
-const Faq = () => {
-    return (
-        <>
-            <div className="container"></div>
-        </>
-    )
-}
->>>>>>> 3523a8841ce5b11c254d4d0ef6223dcd1bd2f43e
 export default Faq;
