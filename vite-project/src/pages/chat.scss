@@ -1,0 +1,27 @@
+.chat-form {
+    display: flex;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    left: 50%;
+    top: 80%;
+    gap: 10px;
+    width: 450px;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.text-input {
+    border-radius: 11px;
+    border: 1px solid #2d2d2d;
+    background-color: #111111;
+    padding: 12px 25px;
+    color: white;
+    outline: none;
+    transition: 1s ease;
+    height: 40px;
+    width: 40%;
+}
+
+.size {
+    width: 100%;
+}

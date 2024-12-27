@@ -1,4 +1,8 @@
+import { useSelector, useDispatch } from 'react-redux';
+import { updateCorrentPage } from '../../counterSlice';
 const Loader = () => {
+    const dispatch = useDispatch(); // Отправляем действия
+    setTimeout(() => dispatch(updateCorrentPage({ isActivePage: "chat" })), 2000)
     return (
         <>
             <div className="loader">

@@ -196,40 +196,11 @@ header {
     }
 }
 
-form {
-    width: 562px;
-    display: flex;
-    gap: 15px;
-    position: fixed;
-    transform: translate(-50%, -100%);
-    top: 100%;
-    left: 50%;
-    justify-content: center;
-    background: linear-gradient(0deg, #0c0c0c, #0c0c0ceb, #00000000);
-    width: 100%;
-    height: 200px;
-    padding-top: 70px;
-}
-
 .chat-container {
     color: $gray-light;
 }
 
-.text-input {
-    border-radius: 11px;
-    border: 1px solid #2d2d2d;
-    background-color: #111111;
-    padding: 12px 25px;
-    color: white;
-    outline: none;
-    width: 200px;
-    transition: 1s ease;
-    height: 40px;
-}
 
-.size {
-    width: 30%;
-}
 
 .submit-button {
     padding: 12px 25px;
@@ -242,9 +213,3 @@ form {
 }
 
 //faq 
-
-
-
-
-
-

@@ -1,8 +1,11 @@
 import { useState } from 'react';
 import img from '../../src/assets/image/pngwing 1.png';
 import GenderOptions from '../components/home/gender';
-import Loader from '../components/home/loader';
-const Home = () => {
+import { updateCorrentPage } from '../counterSlice';
+import { useSelector, useDispatch } from 'react-redux';
+const Home = ({ setIsActivePage }) => {
+    const dispatch = useDispatch(); // Отправляем действия
+
     const [genderOptions, setGenderOptions] = useState([
         {
             id: 1,
@@ -20,7 +23,7 @@ const Home = () => {
         setGenderOptions(genderOptions.map((option) =>
             option.id === id ? { ...option, gender: gender } : { ...option }))
     }
-    console.log(genderOptions);
+
     return (
         <>
             <main className="main-content m">
@@ -38,7 +41,7 @@ const Home = () => {
                                 genderOptions.map(item => <GenderOptions id={item.id} title={item} genderFunc={hangleClick} />)
                             }
                         </div>
-                        <input className="search-button" type="button" value="Поиск" />
+                        <input onClick={() => dispatch(updateCorrentPage({ isActivePage: "loader" }))} className="search-button" type="button" value="Поиск" />
                     </form>
                 </div>
             </main>
