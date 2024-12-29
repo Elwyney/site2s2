@@ -25,6 +25,8 @@ a {
     color: $gray-light;
 }
 
+
+
 body {
     background-color: rgb(12, 12, 12);
     font-family: Arial;
@@ -278,6 +280,7 @@ form {
     border: 1px solid $slate-gray; 
     transform: scaleX(1);
     position: relative;
+    border-radius: 11px;
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
     & span {
         padding-left: 30px;
@@ -319,5 +322,92 @@ form {
     }
 }
 
+.info-person {
+    max-width: 1440px;
+    height: 540px;
+    margin-top: 50px;
+}
 
+.info-person-inner-gender-your {
+    line-height: 1.7;
+}
 
+.info-person-inner-gender {
+    display: flex;
+    max-width: 500px;
+}
+
+.info-person-inner-gender-interlocutor {
+    margin-left: 44px;
+    line-height: 1.7;
+}
+
+button {
+    padding: 3px;
+    background-color : transparent;
+    color: #fff;
+    border-radius: 4px;
+    margin-right: 5px;
+    border: 1px solid #242424;
+    cursor: pointer;
+    width: 47px;
+    height: 47px;
+    font-size: 18px;
+    
+}
+
+button:hover {
+    border-color:  #276AEB;
+}
+
+.info-person-inner-your-name-input {
+    margin-top: 21px;
+    border-color: #4F4F4F;
+    background-color: inherit;
+    max-width: 183px;
+    height: 38px;
+    border: 1px solid #4F4F4F;
+    border-radius: 11px;
+    color: #4F4F4F;
+    padding-left: 20px;
+}
+
+.info-person-inner-your-name {
+    margin-top: 20px;
+}
+
+#info-person-inner-button {
+    width :120px;
+    height :48px;
+    border: 1px solid #4F4F4F;
+    border-radius: 11px;
+    color: #4F4F4F;
+    margin-top: 23px;
+}
+
+.info-person-button {
+    width: 40px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.info-person-button span {
+    background-color: #000;
+    height: 2px;
+    width: 100%;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #1E1E1E;
+    margin: 10px 0;
+    margin-bottom: 50px;
+  }
+  
+  .complain {
+    margin-left: 10px;
+  }

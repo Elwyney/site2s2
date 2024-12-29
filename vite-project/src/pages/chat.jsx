@@ -8,8 +8,8 @@ const Chat = () => {
                 <div className="container">
                     <div className="chat">
                         <div>
-                            <a href="">Завершить чат</a>
-                            <a href="">Пожаловаться</a>
+                            <a className="finish-chat" href="">Завершить чат</a>
+                            <a className="complain"  href="">Пожаловаться</a>
                         </div>
                         <div className="set-message">
                         <div className="message">
@@ -21,11 +21,14 @@ const Chat = () => {
                             <span>Моменты первого контакта могут изменить вашу жизнь. Сделайте этот первый шаг и отправьте сообщение.</span>
                         </div>
                         </div>
-                        <form action="">
+
+                        <SignIn/>
+
+{/*                         <form action="">
                             <input onClick={() => setActive((prew) => true)} className={"text-input" + (isActive ? " size" : "")}
                                 type="text" placeholder="Введите ваше сообшение" />
                             <input className="submit-button" type="button" value="Отправить" />
-                        </form>
+                        </form> */}
                     </div>
                 </div>
             </div>
@@ -35,3 +38,34 @@ const Chat = () => {
 export default Chat;
 
 
+const SignIn = () => {
+    return (
+        <div className="info-person">
+                <hr />
+            <div className="info-person-inner">
+                <div className="info-person-inner-gender">
+                    <div className="info-person-inner-gender-your">
+                        <label htmlFor="">Ваш пол</label> <br />
+                        <button>M</button>
+                        <button>Ж</button>
+                    </div>
+                    <div className="info-person-inner-gender-interlocutor">
+                        <label htmlFor="">Пол собеседника</label> <br />
+                        <button>M</button>
+                        <button>Ж</button>
+                    </div>
+                </div>
+                <div className="info-person-inner-your-name">
+                    <label className="info-person-inner-your-name-label"  htmlFor="">Ваше имя</label> <br />
+                    <input className="info-person-inner-your-name-input" type="text" placeholder="Введите ваше имя"/>
+                </div>
+                <div className="info-person-inner-your-name">
+                    <button id="info-person-inner-button">Поиск</button>
+                </div>
+                <div>
+                </div>
+            </div>
+
+        </div>
+    )
+}
