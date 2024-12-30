@@ -65,7 +65,7 @@ const SignIn = () => {
                 <div>
                 </div>
             </div>
-
+            <hr />
         </div>
     )
 }
