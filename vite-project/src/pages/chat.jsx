@@ -8,7 +8,7 @@ const Chat = () => {
                 <div className="container">
                     <div className="chat">
                         <div>
-                            <a href="">Завершить чат</a>
+                            <a href="">Завершить чатт</a>
                             <a href="">Пожаловаться</a>
                         </div>
                         <div className="set-message">
